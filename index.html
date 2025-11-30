@@ -1,54 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilos/estilos.css">
-    <link rel="stylesheet" href="/estilos/estilos-mobile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/estilos/estilos.css" />
+    <link rel="stylesheet" href="/estilos/estilos-mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="cont">
-        <div class="menu">
-            <nav>
-                <img class="logo" src="/imagenes/logo_1.png" alt="">
-                <input type="checkbox" id="active">
-                <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-                <div class="wrapper">
-                   <ul>
-                      <li><a href="#" class="wrapper1">Home</a></li>
-                      <li><a href="#" class="wrapper2">Awards</a></li>
-                      <li><a href="#" class="wrapper3">Films & Tv</a></li>
-                      <li><a href="#" class="wrapper4">Comics</a></li>
-                      <li><a href="#" class="wrapper5">Novels</a></li>
-                      <li><a href="#" class="wrapper6">Shop</a></li>
-                      <li><a href="#" class="wrapper7">Hellboy Universe</a></li>
-                   </ul>
-                </div>
-              </nav>
+      <div class="menu">
+        <nav>
+          <img class="logo" src="/imagenes/logo_1.png" alt="" />
+          <input type="checkbox" id="active" />
+          <label for="active" class="menu-btn"
+            ><i class="fas fa-bars"></i
+          ></label>
+          <div class="wrapper">
+            <ul>
+              <li><a href="#" class="wrapper1">Home</a></li>
+              <li><a href="#" class="wrapper2">Awards</a></li>
+              <li><a href="#" class="wrapper3">Films & Tv</a></li>
+              <li><a href="#" class="wrapper4">Comics</a></li>
+              <li><a href="#" class="wrapper5">Novels</a></li>
+              <li><a href="#" class="wrapper6">Shop</a></li>
+              <li><a href="#" class="wrapper7">Hellboy Universe</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="cover">
+        <div class="cover-content hidden">
+          <h1>THE ART OF DARKNESS</h1>
+          <p>Explore the shadows of the Mignolaverse</p>
         </div>
-        <div class="cover">
-           
+      </div>
+      <div class="rsm">
+        <div class="rsm__flex hidden">
+          <h1>Mike Mignola</h1>
+          <img src="/imagenes/fotohell.png" alt="" />
+          <p>
+            American comic book artist and writer best known for creating
+            Hellboy for Dark Horse Comics, part of a shared universe of titles
+            including B.P.R.D., Abe Sapien, Lobster Johnson, and various
+            spin-offs.
+          </p>
         </div>
-        <div class="rsm">
-            <div class="rsm__flex">
-            <h1>Mike Mignola</h1>
-            <img src="/imagenes/fotohell.png" alt="">
-            <p>American comic book artist and writer best known for creating Hellboy for Dark Horse Comics, part of a shared universe of titles including B.P.R.D., Abe Sapien, Lobster Johnson, and various spin-offs.
-            </p>
+      </div>
+      <div class="cards">
+        <h2 class="section-title hidden">Featured Works</h2>
+        <div class="card-grid">
+          <div class="card hidden">
+            <img src="/imagenes/hellboycaceria.jpg" alt="Hellboy Caceria" />
+            <div class="card-info">
+              <h3>The Wild Hunt</h3>
+              <p>Hellboy confronts his destiny.</p>
             </div>
+          </div>
+          <div class="card hidden">
+            <img
+              src="/imagenes/hellboy-seed-of-destruction-2-1994.webp"
+              alt="Seed of Destruction"
+            />
+            <div class="card-info">
+              <h3>Seed of Destruction</h3>
+              <p>The beginning of it all.</p>
+            </div>
+          </div>
+          <div class="card hidden">
+            <img
+              src="/imagenes/BPRD.The-Devil-You-Know-11.cropped.02.jpg"
+              alt="BPRD"
+            />
+            <div class="card-info">
+              <h3>B.P.R.D.</h3>
+              <p>The Devil You Know.</p>
+            </div>
+          </div>
+          <div class="card hidden">
+            <img src="/imagenes/hellboymignola.jpg" alt="Hellboy Art" />
+            <div class="card-info">
+              <h3>Masterpiece</h3>
+              <p>Iconic Mignola style.</p>
+            </div>
+          </div>
         </div>
-        <div class="cards">
-            C A R D S
+      </div>
+      <div class="form">
+        <div class="form-container hidden">
+          <h2>Join the Bureau</h2>
+          <p>Subscribe for updates on the Mignolaverse.</p>
+          <form id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+          <div id="form-message"></div>
         </div>
-        <div class="form">
-            F O R M
+      </div>
+      <div class="footer">
+        <div class="footer-content">
+          <p>&copy; 2023 Mike Mignola Fan Tribute. All rights reserved.</p>
+          <div class="socials">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+          </div>
         </div>
-        <div class="footer">
-            F O O T E R
-        </div>
+      </div>
     </div>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
