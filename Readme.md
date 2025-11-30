@@ -1,6 +1,6 @@
 # Mike Mignola - Fan Tribute
 
-![Cover Image](/home/memz/.gemini/antigravity/brain/891ee233-922f-4c0a-a5b6-1d67303bd291/seo_cover_1764520115659.png)
+![Cover Image](seo-cover.png)
 
 A fan tribute website dedicated to the legendary comic book artist and writer, Mike Mignola, creator of Hellboy.
 
