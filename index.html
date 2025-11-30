@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fan tribute website for Mike Mignola, creator of Hellboy. Explore his art, comics, and universe."
+    />
+    <meta
+      name="keywords"
+      content="Mike Mignola, Hellboy, BPRD, Comic Books, Art, Dark Horse Comics"
+    />
+    <meta property="og:title" content="Mike Mignola - The Art of Darkness" />
+    <meta
+      property="og:description"
+      content="Explore the shadows of the Mignolaverse. Fan tribute website."
+    />
+    <meta property="og:image" content="seo-cover.png" />
     <link rel="stylesheet" href="/estilos/estilos.css" />
     <link rel="stylesheet" href="/estilos/estilos-mobile.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <title>Document</title>
+    <title>Mike Mignola - Fan Tribute</title>
   </head>
   <body>
     <div class="cont">
@@ -23,28 +37,48 @@
           ></label>
           <div class="wrapper">
             <ul>
-              <li><a href="#" class="wrapper1">Home</a></li>
-              <li><a href="#" class="wrapper2">Awards</a></li>
-              <li><a href="#" class="wrapper3">Films & Tv</a></li>
-              <li><a href="#" class="wrapper4">Comics</a></li>
-              <li><a href="#" class="wrapper5">Novels</a></li>
-              <li><a href="#" class="wrapper6">Shop</a></li>
-              <li><a href="#" class="wrapper7">Hellboy Universe</a></li>
+              <li>
+                <a href="#" class="wrapper1" data-i18n="nav.home">Home</a>
+              </li>
+              <li>
+                <a href="#" class="wrapper2" data-i18n="nav.awards">Awards</a>
+              </li>
+              <li>
+                <a href="#" class="wrapper3" data-i18n="nav.films"
+                  >Films & Tv</a
+                >
+              </li>
+              <li>
+                <a href="#" class="wrapper4" data-i18n="nav.comics">Comics</a>
+              </li>
+              <li>
+                <a href="#" class="wrapper5" data-i18n="nav.novels">Novels</a>
+              </li>
+              <li>
+                <a href="#" class="wrapper6" data-i18n="nav.shop">Shop</a>
+              </li>
+              <li>
+                <a href="#" class="wrapper7" data-i18n="nav.universe"
+                  >Hellboy Universe</a
+                >
+              </li>
             </ul>
           </div>
         </nav>
       </div>
       <div class="cover">
         <div class="cover-content hidden">
-          <h1>THE ART OF DARKNESS</h1>
-          <p>Explore the shadows of the Mignolaverse</p>
+          <h1 data-i18n="cover.title">THE ART OF DARKNESS</h1>
+          <p data-i18n="cover.subtitle">
+            Explore the shadows of the Mignolaverse
+          </p>
         </div>
       </div>
       <div class="rsm">
         <div class="rsm__flex hidden">
           <h1>Mike Mignola</h1>
           <img src="/imagenes/fotohell.png" alt="" />
-          <p>
+          <p data-i18n="bio.text">
             American comic book artist and writer best known for creating
             Hellboy for Dark Horse Comics, part of a shared universe of titles
             including B.P.R.D., Abe Sapien, Lobster Johnson, and various
@@ -53,13 +87,15 @@
         </div>
       </div>
       <div class="cards">
-        <h2 class="section-title hidden">Featured Works</h2>
+        <h2 class="section-title hidden" data-i18n="cards.title">
+          Featured Works
+        </h2>
         <div class="card-grid">
           <div class="card hidden">
             <img src="/imagenes/hellboycaceria.jpg" alt="Hellboy Caceria" />
             <div class="card-info">
-              <h3>The Wild Hunt</h3>
-              <p>Hellboy confronts his destiny.</p>
+              <h3 data-i18n="card1.title">The Wild Hunt</h3>
+              <p data-i18n="card1.desc">Hellboy confronts his destiny.</p>
             </div>
           </div>
           <div class="card hidden">
@@ -68,8 +104,8 @@
               alt="Seed of Destruction"
             />
             <div class="card-info">
-              <h3>Seed of Destruction</h3>
-              <p>The beginning of it all.</p>
+              <h3 data-i18n="card2.title">Seed of Destruction</h3>
+              <p data-i18n="card2.desc">The beginning of it all.</p>
             </div>
           </div>
           <div class="card hidden">
@@ -78,37 +114,52 @@
               alt="BPRD"
             />
             <div class="card-info">
-              <h3>B.P.R.D.</h3>
-              <p>The Devil You Know.</p>
+              <h3 data-i18n="card3.title">B.P.R.D.</h3>
+              <p data-i18n="card3.desc">The Devil You Know.</p>
             </div>
           </div>
           <div class="card hidden">
             <img src="/imagenes/hellboymignola.jpg" alt="Hellboy Art" />
             <div class="card-info">
-              <h3>Masterpiece</h3>
-              <p>Iconic Mignola style.</p>
+              <h3 data-i18n="card4.title">Masterpiece</h3>
+              <p data-i18n="card4.desc">Iconic Mignola style.</p>
             </div>
           </div>
         </div>
       </div>
       <div class="form">
         <div class="form-container hidden">
-          <h2>Join the Bureau</h2>
-          <p>Subscribe for updates on the Mignolaverse.</p>
+          <h2 data-i18n="form.title">Join the Bureau</h2>
+          <p data-i18n="form.subtitle">
+            Subscribe for updates on the Mignolaverse.
+          </p>
           <form id="newsletter-form">
-            <input type="email" placeholder="Enter your email" required />
-            <button type="submit">SUBSCRIBE</button>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              data-i18n-placeholder="form.placeholder"
+              required
+            />
+            <button type="submit" data-i18n="form.button">SUBSCRIBE</button>
           </form>
           <div id="form-message"></div>
         </div>
       </div>
       <div class="footer">
         <div class="footer-content">
-          <p>&copy; 2023 Mike Mignola Fan Tribute. All rights reserved.</p>
+          <p data-i18n="footer.copyright">
+            &copy; 2023 Mike Mignola Fan Tribute. All rights reserved.
+          </p>
           <div class="socials">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook"></i>
+            <a href="https://twitter.com/artofmmignola" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/artofmmignola/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/MikeMignola1/" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
           </div>
         </div>
       </div>
